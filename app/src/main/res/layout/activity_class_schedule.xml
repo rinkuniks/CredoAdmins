@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.ClassSchedule">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="CLASS SCHEDULES"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class I A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class I B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class II
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class II
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class III
+ A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class III
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class IV
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class IV
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class V
+ A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class V
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VI
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VI
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VII
+ A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VII
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VIII
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class VIII
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class IX
+ A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class IX
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class X
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class X
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class XI"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class XI
+B"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class XII
+A"/>
+
+            <android.support.design.widget.TabItem
+                    android:id="@+id/tabItem24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class XII
+B"/>
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

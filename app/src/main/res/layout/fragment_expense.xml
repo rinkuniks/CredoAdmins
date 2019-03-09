@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#FFF"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ExpenseFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/totalamount"
+            android:layout_height="50dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:text="Total :-  Rs/-"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:id="@+id/totalexpensedisplay"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/totalamount"
+            android:id="@+id/header"
+            android:background="#E1E1E1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#E1E1E1"
+                    android:layout_height="wrap_content"
+                    android:text="Date"/>
+
+
+            <View
+                    android:layout_width="1dp"
+                    android:background="#FFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:text="Narration"
+                    android:layout_centerInParent="true"
+                    android:background="#E1E1E1"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:background="#FFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_weight="1.3">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textSize="18sp"
+                    android:background="#E1E1E1"
+                    android:textColor="#000"
+                    android:text="Expense Head &amp; Amount"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/header"
+            android:id="@+id/recyclerviewExpense"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/fabexpense"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

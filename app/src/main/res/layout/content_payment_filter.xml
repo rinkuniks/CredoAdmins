@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_payment_filter"
+        tools:context=".ui.PaymentFilter">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/datepickerlayout"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="From DATE"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fromdateButton"/>
+
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="To DATE"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/todateButton"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerlayout"
+            android:layout_below="@+id/datepickerlayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/spinner"
+                android:id="@+id/spinerclass"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/drop_down"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/spinnerlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/view"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view"
+            android:id="@+id/applybuttonlayout"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Apply"
+            android:id="@+id/applybutton"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/submitbuttonlogin"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/paymentfilterrecycle"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/applybuttonlayout"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

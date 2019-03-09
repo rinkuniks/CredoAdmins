@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/leave_backgraound"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/buttontodayDate"
+                    android:text="22-DEC"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:background="#FFF"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                tools:ignore="ExtraText">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:text="Seshu Kusam (Physics)"
+                        android:paddingTop="5dp"
+                        android:textColor="#000"
+                        android:id="@+id/textViewLeaveName"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:text="Class III, Section A"
+                        android:id="@+id/textViewLeaveSection"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayoutApproval"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="To Date :"
+                                android:textColor="#000"
+                                android:id="@+id/toDateTextview"
+                                android:textSize="16sp"
+                                android:layout_height="match_parent"/>
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:text="03/09/2018"
+                                android:textColor="#000"
+                                android:id="@+id/textViewLeaveToDate"
+                                android:textSize="16sp"
+                                android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:text="Reason :"
+                                android:textColor="#000"
+                                android:textSize="16sp"
+                                android:layout_height="match_parent"/>
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:textColor="#000"
+                                android:text="I am sick so i can,t come for those days"
+                                android:textSize="16sp"
+                                android:paddingEnd="10dp"
+                                android:id="@+id/textViewLeaveReason"
+                                android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginEnd="30dp"
+                            android:layout_height="wrap_content">
+
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:text="Approve"
+                                android:background="@drawable/accept"
+                                android:layout_margin="10dp"
+                                android:id="@+id/buttonLeaveApprove"
+                                android:textColor="#FFF"
+                                android:textSize="16sp"
+                                android:layout_height="35dp"
+                                tools:ignore="HardcodedText"/>
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_weight="0.5"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/reject"
+                                android:id="@+id/buttonLeaveReject"
+                                android:text="Reject"
+                                android:textColor="#FFF"
+                                android:textSize="16sp"
+                                android:layout_height="35dp"
+                                tools:ignore="HardcodedText"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/textViewResult"
+                    android:text="Result"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
